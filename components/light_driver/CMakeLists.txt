@@ -1,0 +1,12 @@
+idf_component_register(
+    SRCS
+        "light_driver.c"
+        "iot_led.c"
+    INCLUDE_DIRS
+        "include"
+    REQUIRES
+        driver
+        app_storage
+        esp_wifi
+        wifi_provisioning
+)
